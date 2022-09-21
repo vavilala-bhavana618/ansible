@@ -1,0 +1,7 @@
+---
+# vars file for apache
+
+pkg_name: httpd
+pkg_state: started
+
+httpd_dest: /var/www/html/index.html

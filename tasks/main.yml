@@ -1,0 +1,10 @@
+---
+- name: Installing apache server
+  yum:
+   name: "{{ pkg_name }}"
+   state: present
+- name: Creating index file 
+  template:
+   src: bhavana.html.j2
+   dest: "{{ httpd_dest }}"
+  notify: restart
